@@ -1,0 +1,23 @@
+[
+{
+"title": "The Simlarilion",
+"author": "J.R.R Tolkien",
+"available": true,
+"pages": 386,
+"isbn": 9780345325815
+},
+{
+"title": "The Lion, the Witch and the Wardrobe",
+"author": "CS Lewis",
+"available": false,
+"pages": 224,
+"isbn": 9780064404990
+},
+{
+"title": "The Princess and the Goblin",
+"author": "George MacDonald",
+"available": true,
+"pages": 308,
+"isbn": 9780141332482
+}
+]

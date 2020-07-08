@@ -4,7 +4,7 @@ require_once 'RedBeanPHP5_5/rb.php';
 
 #creating a connection
 R::setup( 'mysql:host=localhost;dbname=class_db',
-       'user1', 'user1' ); //for both mysql or mariaDB
+       'admin', '' ); //for both mysql or mariaDB
 
 $book = R::dispense('book');
 

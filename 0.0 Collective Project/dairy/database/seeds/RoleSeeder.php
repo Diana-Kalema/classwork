@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class RoleSeeder extends Seeder
 {
@@ -12,7 +14,7 @@ class RoleSeeder extends Seeder
      */
     public function run()
     {
-        //admin
+        //admin user
         DB::table('roles')->insert([
             'name' => 'admin',
             'description' => 'Administrator',
@@ -26,17 +28,24 @@ class RoleSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        //user (casuals)
+        //casual
         DB::table('roles')->insert([
-            'name' => 'user',
-            'description' => 'User',
+            'name' => 'labourer',
+            'description' => 'Labourer',
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        //cooperative-societies
+        //customer
         DB::table('roles')->insert([
-            'name' => 'coop-soc',
-            'description' => 'Cooperative Society',
+            'name' => 'customer',
+            'description' => 'Customer',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+        //societies
+        DB::table('roles')->insert([
+            'name' => 'dairy-coop',
+            'description' => 'Dairy Cooperative',
             'isOrganization' => true,
             'created_at' => now(),
             'updated_at' => now()
